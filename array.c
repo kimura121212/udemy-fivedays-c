@@ -8,6 +8,11 @@ int main(){
     func(a);
     printf("%d\n", a[3]);
 
+    // できればsizeofを使う
+    for (int j=0;j<sizeof(a)/sizeof(int); j++){
+        printf("%d\n", a[j]);
+    }
+
     return 0;
  }
 
